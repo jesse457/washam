@@ -1,4 +1,4 @@
-@extends('admin.layouts.admin')
+@extends('admin.admin')
 
 @section('page-title', 'Customers')
 
@@ -20,7 +20,7 @@
                 <tr class="border-b hover:bg-gray-50">
                     <td class="flex items-center gap-2 px-4 py-2">
                         <div class="bg-blue-100 text-blue-700 font-bold w-8 h-8 flex items-center justify-center rounded-full">
-                            {{ strtoupper(substr($customer->name, 0, 1)) }}
+                            {{ strtoupper(substr($customer?->name, 0, 1)) }}
                         </div>
                         {{ $customer->name }}
                     </td>

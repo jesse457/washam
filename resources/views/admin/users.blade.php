@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('admin.admin')
 
 @section('content')
 <h1 class="text-3xl font-bold mb-4">Users</h1>
@@ -17,7 +17,7 @@
             <td class="py-2 px-4">{{ $user->id }}</td>
             <td class="py-2 px-4">{{ $user->name }}</td>
             <td class="py-2 px-4">{{ $user->email }}</td>
-            <td class="py-2 px-4">{{ $user->is_admin ? 'Admin' : 'User' }}</td>
+            <td class="py-2 px-4">{{ $user->admin ? 'Admin' : 'User' }}</td>
         </tr>
         @endforeach
     </tbody>

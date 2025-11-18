@@ -13,6 +13,6 @@ class AdminMiddleware
         if (Auth::check() && Auth::user()->admin == 1) {
             return $next($request);
         }
-    return redirect()->route('home');
+        return redirect()->route('home');
     }
 }

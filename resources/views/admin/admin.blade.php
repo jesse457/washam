@@ -17,7 +17,7 @@
             <nav class="p-4 space-y-2 mt-6">
                 <a href="{{ route('admin.dashboard') }}" class="block px-4 py-2 rounded-lg hover:bg-blue-600 transition {{ request()->routeIs('admin.dashboard') ? 'bg-blue-600' : '' }}">🏠 Dashboard</a>
                 <a href="{{ route('admin.customers') }}" class="block px-4 py-2 rounded-lg hover:bg-blue-600 transition {{ request()->routeIs('admin.customers') ? 'bg-blue-600' : '' }}">👥 Customers</a>
-                <a href="{{ route('admin.orders') }}" class="block px-4 py-2 rounded-lg hover:bg-blue-600 transition {{ request()->routeIs('admin.orders') ? 'bg-blue-600' : '' }}">📦 Orders</a>
+                 <a href="{{ route('admin.orders') }}" class="block px-4 py-2 rounded-lg hover:bg-blue-600 transition {{ request()->routeIs('admin.orders') ? 'bg-blue-600' : '' }}">📦 Orders</a>
                 <a href="{{ route('admin.services') }}" class="block px-4 py-2 rounded-lg hover:bg-blue-600 transition {{ request()->routeIs('admin.services') ? 'bg-blue-600' : '' }}">🧴 Services</a>
                 <a href="{{ route('admin.settings') }}" class="block px-4 py-2 rounded-lg hover:bg-blue-600 transition {{ request()->routeIs('admin.settings') ? 'bg-blue-600' : '' }}">⚙️ Settings</a>
             </nav>

@@ -15,7 +15,7 @@ class AdminUserSeeder extends Seeder
             [
                 'name' => 'Admin',
                 'password' => Hash::make('password123'),  // HARD-CODED PASSWORD
-                'user_type' => 1
+                'admin' => 1
             ]
         );
     }

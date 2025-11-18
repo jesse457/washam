@@ -10,8 +10,7 @@ class AppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        // Override Fortify's default login redirect
-        $this->app->singleton(LoginResponse::class, CustomLoginResponse::class);
+       
     }
 
     public function boot(): void

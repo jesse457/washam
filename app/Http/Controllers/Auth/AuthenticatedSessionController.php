@@ -29,11 +29,11 @@ class AuthenticatedSessionController extends Controller
         'password' => 'required',
     ]);
 
-    if (!auth()->attempt($request->only('email', 'password'))) {
+    if (!Auth::attempt($request->only('email', 'password'))) {
         return back()->withErrors(['email' => 'Invalid credentials']);
     }
 
-    $user = auth()->user();
+    $user = Auth::user();
 
 
     // Redirect based on user role
